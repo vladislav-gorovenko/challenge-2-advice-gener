@@ -1,40 +1,43 @@
-/* 
-# Front-end Style Guide
+/* generic styles */
 
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Light Cyan: hsl(193, 38%, 86%)
-- Neon Green: hsl(150, 100%, 66%)
-
-### Neutral
-
-- Grayish Blue: hsl(217, 19%, 38%)
-- Dark Grayish Blue: hsl(217, 19%, 24%)
-- Dark Blue: hsl(218, 23%, 16%)
-
-## Typography
-
-### Body Copy
-
-- Font size (quote): 28px
-
-### Font
-
-- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
-- Weights: 800
-*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+} 
+
+:root {
+    /* primary colors */
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    /* neutral colors */
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* specific styles */
+
+.advice-bottom-border {
+    background-image: url(./images/pattern-divider-desktop.svg);
+    width: 100px;
+    height: 200px;
+}
+
+/* desktop */
+@media (max-width: 1440px) {
+    /*  */
+}
+
+/* mobile */
+@media (max-width: 375px) {
+    /*  */
 }
