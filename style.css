@@ -53,7 +53,7 @@ button {
 .advice-box {
     margin: 2rem;
     position: relative;
-    min-height: 450px;
+    min-height: 350px;
     border-radius: 2rem;
     justify-content: space-between;
     background: var(--dark-grayish-blue);
@@ -93,6 +93,21 @@ button {
 
 .advice-btn:hover {
     box-shadow: 0px 0px 30px 0px var(--neon-green);
+}
+
+.loading {
+    animation: rotating 1s linear forwards infinite;
+}
+
+@keyframes rotating {
+    0% {
+        transform: translateX(-50%) translateY(50%) rotateZ(0);
+        background: var(--light-cyan);
+    }
+    100% {
+        transform: translateX(-50%) translateY(50%) rotateZ(360deg);
+        background: var(--light-cyan);
+    }
 }
 
 /* desktop */
